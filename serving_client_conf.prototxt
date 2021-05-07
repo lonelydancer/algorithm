@@ -1,0 +1,111 @@
+feed_var {
+  name: "token_ids"
+  alias_name: "token_ids"
+  is_lod_tensor: false
+  feed_type: 0
+  shape: 256
+  shape: 1
+}
+feed_var {
+  name: "type_ids"
+  alias_name: "type_ids"
+  is_lod_tensor: false
+  feed_type: 0
+  shape: 256
+  shape: 1
+}
+feed_var {
+  name: "pos_ids"
+  alias_name: "pos_ids"
+  is_lod_tensor: false
+  feed_type: 0
+  shape: 256
+  shape: 1
+}
+feed_var {
+  name: "generation_mask"
+  alias_name: "generation_mask"
+  is_lod_tensor: false
+  feed_type: 1
+  shape: 257
+  shape: 257
+}
+feed_var {
+  name: "tgt_ids"
+  alias_name: "tgt_ids"
+  is_lod_tensor: true
+  feed_type: 0
+  shape: -1
+}
+feed_var {
+  name: "tgt_pos"
+  alias_name: "tgt_pos"
+  is_lod_tensor: true
+  feed_type: 0
+  shape: -1
+}
+feed_var {
+  name: "init_score"
+  alias_name: "init_score"
+  is_lod_tensor: true
+  feed_type: 1
+  shape: -1
+}
+feed_var {
+  name: "parent_idx"
+  alias_name: "parent_idx"
+  is_lod_tensor: false
+  feed_type: 2
+  shape: 0
+}
+feed_var {
+  name: "tgt_generation_mask"
+  alias_name: "tgt_generation_mask"
+  is_lod_tensor: false
+  feed_type: 1
+  shape: 1
+  shape: 257
+}
+feed_var {
+  name: "latent_id"
+  alias_name: "latent_id"
+  is_lod_tensor: false
+  feed_type: 0
+  shape: 1
+}
+feed_var {
+  name: "data_id"
+  alias_name: "data_id"
+  is_lod_tensor: false
+  feed_type: 0
+  shape: 1
+}
+fetch_var {
+  name: "save_infer_model/scale_0.tmp_0"
+  alias_name: "save_infer_model/scale_0.tmp_0"
+  is_lod_tensor: false
+  fetch_type: 0
+  shape: 0
+}
+fetch_var {
+  name: "save_infer_model/scale_1.tmp_0"
+  alias_name: "save_infer_model/scale_1.tmp_0"
+  is_lod_tensor: false
+  fetch_type: 0
+  shape: 0
+}
+fetch_var {
+  name: "save_infer_model/scale_2.tmp_0"
+  alias_name: "save_infer_model/scale_2.tmp_0"
+  is_lod_tensor: false
+  fetch_type: 0
+  shape: 256
+  shape: 1
+}
+fetch_var {
+  name: "save_infer_model/scale_3.tmp_0"
+  alias_name: "save_infer_model/scale_3.tmp_0"
+  is_lod_tensor: false
+  fetch_type: 0
+  shape: 1
+}
