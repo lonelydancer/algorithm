@@ -21,7 +21,7 @@ def data_preprocess_1():
     for key in data:
 #        tmp_data[key] = np.array([data[key][0]]).squeeze(0)
         data[key] = np.array(data[key])
-    return tmp_data
+    return data
 
 from paddle_serving_client import Client
 
