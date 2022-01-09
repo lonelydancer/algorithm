@@ -13,7 +13,7 @@ def ls_bart(model, inputs):
 #generated_ids = model.infer(inputs, multiple_output=True, sampling_method='topk',topk=8, topp=0.9, length_penalty=1.3)
 #generated_ids = model.infer(inputs,  sampling_method='topk_greedy',topk=8, topp=0.9, length_penalty=1.3)
     print (model.infer)
-    generated_ids = model.infer(inputs)#,  sampling_method='topk',topk=8, topp=0, length_penalty=0.9)
+    generated_ids = model.infer(inputs,  sampling_method='topk',topk=8, topp=0, length_penalty=0.9)
     torch.cuda.synchronize()
     end_time = time.perf_counter()
     return generated_ids, end_time - start_time
